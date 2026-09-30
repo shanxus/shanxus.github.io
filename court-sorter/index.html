@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="羽球場地排序：為羽球臨打團與球隊設計的公平排點、球員管理與收支工具。">
+    <meta name="theme-color" content="#087a63">
+    <title>羽球場地排序｜Court Sorter</title>
+    <link rel="icon" href="assets/app-icon.png">
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #10251f;
+        --muted: #587068;
+        --brand: #087a63;
+        --brand-dark: #045343;
+        --surface: rgba(255, 255, 255, 0.88);
+        --line: rgba(16, 37, 31, 0.12);
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        color: var(--ink);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background:
+          radial-gradient(circle at 15% 12%, rgba(59, 199, 166, 0.24), transparent 30rem),
+          radial-gradient(circle at 88% 20%, rgba(255, 196, 91, 0.25), transparent 25rem),
+          linear-gradient(145deg, #f4fff9 0%, #edf8f3 48%, #fffaf0 100%);
+      }
+
+      main {
+        width: min(1080px, calc(100% - 40px));
+        margin: 0 auto;
+        padding: 72px 0 48px;
+      }
+
+      .hero {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(240px, 360px);
+        align-items: center;
+        gap: clamp(40px, 8vw, 100px);
+        min-height: 70vh;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 12px;
+        color: var(--brand-dark);
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        background: rgba(8, 122, 99, 0.1);
+        border: 1px solid rgba(8, 122, 99, 0.16);
+        border-radius: 999px;
+      }
+
+      h1 {
+        max-width: 760px;
+        margin: 24px 0 18px;
+        font-size: clamp(44px, 7vw, 76px);
+        line-height: 1.04;
+        letter-spacing: -0.05em;
+      }
+
+      .lead {
+        max-width: 650px;
+        margin: 0;
+        color: var(--muted);
+        font-size: clamp(18px, 2.4vw, 23px);
+        line-height: 1.7;
+      }
+
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 32px;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 50px;
+        padding: 0 22px;
+        color: white;
+        font-weight: 750;
+        text-decoration: none;
+        background: var(--brand);
+        border-radius: 14px;
+        box-shadow: 0 14px 28px rgba(8, 122, 99, 0.2);
+        transition: transform 160ms ease, background 160ms ease;
+      }
+
+      .button:hover { transform: translateY(-2px); background: var(--brand-dark); }
+
+      .button.secondary {
+        color: var(--ink);
+        background: rgba(255, 255, 255, 0.72);
+        border: 1px solid var(--line);
+        box-shadow: none;
+      }
+
+      .app-icon {
+        width: 100%;
+        max-width: 330px;
+        justify-self: center;
+        border-radius: 24%;
+        box-shadow: 0 35px 70px rgba(14, 61, 49, 0.24);
+      }
+
+      .features {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+        margin: 48px 0 72px;
+      }
+
+      .card {
+        padding: 28px;
+        background: var(--surface);
+        border: 1px solid var(--line);
+        border-radius: 24px;
+        backdrop-filter: blur(12px);
+      }
+
+      .card h2 { margin: 0 0 10px; font-size: 21px; }
+      .card p { margin: 0; color: var(--muted); line-height: 1.65; }
+
+      footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 16px;
+        padding-top: 28px;
+        color: var(--muted);
+        font-size: 14px;
+        border-top: 1px solid var(--line);
+      }
+
+      footer a { color: var(--brand-dark); }
+
+      @media (max-width: 760px) {
+        main { padding-top: 42px; }
+        .hero { grid-template-columns: 1fr; min-height: auto; }
+        .app-icon { width: min(70vw, 290px); grid-row: 1; }
+        .features { grid-template-columns: 1fr; margin-top: 64px; }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <div>
+          <span class="eyebrow">COURT SORTER · iPhone &amp; iPad</span>
+          <h1>排點更公平，<br>團主更輕鬆。</h1>
+          <p class="lead">專為羽球臨打團與球隊設計，整合公平排場、球員管理、收支記錄與活動數據，讓你把時間留給真正重要的事——好好打球。</p>
+          <div class="actions">
+            <a class="button" href="https://apps.apple.com/tw/app/id6757661680">前往 App Store</a>
+            <a class="button secondary" href="https://www.notion.so/Privacy-Policy-2e730ad9c4ff806c8cd5c6b6f6cb0432">隱私權政策</a>
+          </div>
+        </div>
+        <img class="app-icon" src="assets/app-icon.png" alt="羽球場地排序 App 圖示" width="1024" height="1024">
+      </section>
+
+      <section class="features" aria-label="主要功能">
+        <article class="card">
+          <h2>智慧公平排場</h2>
+          <p>依上場次數與等待狀態安排球員，降低人工排點負擔。</p>
+        </article>
+        <article class="card">
+          <h2>球員與場地管理</h2>
+          <p>即時掌握場上、等待及缺席狀態，活動進度一目了然。</p>
+        </article>
+        <article class="card">
+          <h2>收支與數據分析</h2>
+          <p>集中記錄費用與活動結果，快速整理每次球敘的重要資訊。</p>
+        </article>
+      </section>
+
+      <footer>
+        <span>© 2026 Yan-Rong Chen</span>
+        <span>羽球場地排序 · Court Sorter</span>
+      </footer>
+    </main>
+  </body>
+</html>
