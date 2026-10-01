@@ -25,15 +25,18 @@
         </section>
 
         <article class="policy-card">
-          <p class="notice">重點摘要：App 不要求建立帳號，也不會將你建立的球員、場地、活動或收支內容上傳到開發者的伺服器。免費使用者選擇觀看獎勵廣告時，Google 可能依其服務需求處理裝置與廣告相關資料。</p>
-          <section><h2>1. App 直接處理的資料</h2><p>羽球場地排序的核心功能在你的裝置上運作。App 不要求註冊帳號，開發者也不會透過自己的伺服器收集或儲存你建立的球員名單、場地、活動紀錄、比賽安排或收支內容。</p></section>
-          <section><h2>2. 廣告服務</h2><p>App 使用 Google AdMob（Google Mobile Ads SDK）提供獎勵廣告。當免費使用者選擇觀看廣告以解鎖一次數據分析功能時，Google Mobile Ads SDK 可能處理下列資訊：</p><ul><li>IP 位址與由此推估的一般位置；</li><li>裝置識別碼，包括廣告識別碼或 App／開發者範圍內的識別碼；</li><li>廣告資料，例如看過的廣告；</li><li>產品互動，例如 App 啟動、點擊或影片觀看；</li><li>效能與診斷資料，例如啟動時間、當機紀錄與其他技術資訊。</li></ul><p>這些資料可能用於廣告投放、成效評估、分析、詐欺防制及改善服務。實際處理方式會依使用者所在地、同意選擇、裝置設定與 Google 的服務設定而異。詳細資訊請參閱 <a href="https://policies.google.com/technologies/partner-sites">Google 如何使用合作夥伴網站或應用程式提供的資訊</a>。</p></section>
-          <section><h2>3. 隱私選擇與同意</h2><p>在法律要求的地區，App 使用 Google User Messaging Platform（UMP）呈現隱私與廣告同意選項。若有可管理的選項，你可以在 App 設定中的隱私選項重新檢視或變更選擇。即使選擇非個人化或受限廣告，廣告服務仍可能為提供廣告、頻率控制、彙總報表、安全與詐欺防制而處理部分技術資訊。</p></section>
-          <section><h2>4. App 內購買</h2><p>付費功能透過 Apple 的 App 內購買系統提供。付款與交易由 Apple 處理，開發者不會取得你的信用卡或其他付款資料。購買狀態可能由 App 與 Apple 的系統確認，以啟用你購買的功能。</p></section>
-          <section><h2>5. 資料保存與安全</h2><p>由 App 儲存在裝置上的內容會持續存在，直到你在 App 中刪除相關內容或移除 App。第三方服務對資料的保存期間與安全措施，依各服務提供者的政策與法律義務辦理。</p></section>
-          <section><h2>6. 兒童隱私</h2><p>本 App 並非專為兒童設計。若你是家長或監護人，並認為兒童透過本 App 提供了個人資料，請聯絡我們。</p></section>
-          <section><h2>7. 政策更新</h2><p>我們可能因功能、法規或第三方服務變更而更新本政策。更新內容會公布於本頁，並調整上方的生效日期。</p></section>
-          <section><h2>8. 聯絡我們</h2><p>如對本政策或資料處理方式有任何疑問，請寄信至 <a href="mailto:tarasuzy00@gmail.com">tarasuzy00@gmail.com</a>。</p></section>
+          <p class="notice">重點摘要：App 不要求建立帳號，球員、場地、活動與收支內容主要儲存在你的裝置上。為提供聯絡支援、使用分析、當機診斷與獎勵廣告，App 會使用 Firebase 與 Google AdMob 處理本政策所列的部分資料。</p>
+          <section><h2>1. 核心功能與裝置內資料</h2><p>羽球場地排序的核心功能在你的裝置上運作。App 不要求註冊帳號，開發者不會將你建立的球員名單、場地、活動紀錄、比賽安排或收支內容上傳至開發者的伺服器。這些裝置內資料會持續存在，直到你在 App 中刪除相關內容或移除 App。</p></section>
+          <section><h2>2. 聯絡我們</h2><p>當你主動使用 App 內的「聯絡我們」並送出表單時，我們會透過 Google Firebase Cloud Firestore 收集你提供的回覆 Email、類別、主旨與訊息，以及 App 版本、Build 版本、作業系統版本、裝置型號、語系、付費功能狀態、執行環境和送出時間。這些資料僅用於回覆、處理問題、改善產品及防止濫用；若不送出表單，App 不會收集這些聯絡內容。</p></section>
+          <section><h2>3. 分析、穩定性與安全</h2><p>App 使用 Google Firebase 的 Analytics、Crashlytics、App Check 與相關服務，以瞭解 App 的使用情形、診斷當機與保護後端服務。依服務功能與裝置設定，可能處理：</p><ul><li>App 執行個體或裝置識別碼；</li><li>一般位置（由 IP 位址推估）；</li><li>產品互動與使用事件，例如 App 開啟、設定頁開啟與聯絡表單送出結果；</li><li>App 內購買事件與產品資訊；</li><li>當機堆疊、App 狀態、效能及其他診斷資料；</li><li>裝置、作業系統、App 版本與 App Attest 驗證資料。</li></ul><p>這些資料用於分析、App 功能、品質改善、安全與防詐欺。詳細資訊請參閱 <a href="https://firebase.google.com/support/privacy">Firebase 隱私權與安全性資訊</a>。</p></section>
+          <section><h2>4. 廣告服務</h2><p>App 使用 Google AdMob（Google Mobile Ads SDK）提供獎勵廣告。當免費使用者選擇觀看廣告以解鎖一次數據分析功能時，Google Mobile Ads SDK 可能處理：</p><ul><li>IP 位址與由此推估的一般位置；</li><li>裝置識別碼，包括廣告識別碼或 App／開發者範圍內的識別碼；</li><li>廣告資料，例如看過的廣告；</li><li>產品互動，例如 App 啟動、點擊或影片觀看；</li><li>效能與診斷資料，例如啟動時間、當機紀錄與其他技術資訊。</li></ul><p>這些資料可能用於第三方廣告、廣告成效評估、分析、詐欺防制及改善服務。實際處理方式會依使用者所在地、同意選擇、裝置設定與 Google 的服務設定而異。詳細資訊請參閱 <a href="https://policies.google.com/technologies/partner-sites">Google 如何使用合作夥伴網站或應用程式提供的資訊</a>。</p></section>
+          <section><h2>5. 隱私選擇與同意</h2><p>在法律要求的地區，App 使用 Google User Messaging Platform（UMP）呈現隱私與廣告同意選項。若有可管理的選項，你可以在 App 設定中的隱私選項重新檢視或變更選擇。即使選擇非個人化或受限廣告，廣告服務仍可能為提供廣告、頻率控制、彙總報表、安全與詐欺防制而處理部分技術資訊。</p></section>
+          <section><h2>6. App 內購買</h2><p>付費功能透過 Apple 的 App 內購買系統提供。付款與交易由 Apple 處理，開發者不會取得你的信用卡或其他付款資料。購買狀態會由 App 與 Apple 的系統確認，以啟用你購買的功能；Firebase Analytics 也可能記錄 App 內購買事件與產品資訊。</p></section>
+          <section><h2>7. 資料分享、保存與安全</h2><p>我們僅在提供上述功能所需的範圍內，與服務供應商 Google（Firebase、AdMob）及 Apple 分享或由其處理資料，不會出售你的個人資料。聯絡表單資料會在處理支援、改善服務及符合法律義務所需期間內保存；第三方服務的保存期間與安全措施則依各服務提供者的政策與法律義務辦理。</p></section>
+          <section><h2>8. 你的權利</h2><p>你可以不使用聯絡表單或不觀看獎勵廣告。若要查詢、更正或刪除透過聯絡表單提供的資料，或對資料處理方式提出疑問，請使用下方 Email 聯絡我們；為協助定位資料，我們可能需要你提供送出表單時使用的 Email 與大約時間。</p></section>
+          <section><h2>9. 兒童隱私</h2><p>本 App 並非專為兒童設計。若你是家長或監護人，並認為兒童透過本 App 提供了個人資料，請聯絡我們。</p></section>
+          <section><h2>10. 政策更新</h2><p>我們可能因功能、法規或第三方服務變更而更新本政策。更新內容會公布於本頁，並調整上方的生效日期。</p></section>
+          <section><h2>11. 聯絡我們</h2><p>如對本政策或資料處理方式有任何疑問，請寄信至 <a href="mailto:tarasuzy00@gmail.com">tarasuzy00@gmail.com</a>。</p></section>
         </article>
       </main>
 
